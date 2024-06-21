@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numero_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el numero de control"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el nombre del estudiante"
+        android:layout_below="@id/numero_control"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa el número de telefono"
+        android:layout_below="@id/nombre"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/telefono"
+        android:layout_marginTop="20dp"
+        android:onClick="guardarAlum"/>
+
+    <Button
+        android:id="@+id/btn_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar por número de control"
+        android:layout_below="@id/btn_guardar"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar por nombre"
+        android:layout_below="@id/btn_control"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_below="@id/btn_nombre"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_modificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:layout_below="@id/btn_eliminar"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
